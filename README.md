@@ -2,17 +2,25 @@
 
 Hva lærte jeg:
 
-Om man skal bruke javascript i react komponenten må man wrappe den i `{}`
+Styling av komponenter i react ved hjelp av css
 
-For å accesse en classe i css må man bruke:
+# External
+Bra når man skal style hele "prosjektet" blir knotete å style enkelt komponenter som kanpper når de ofte får samme `className` i større prosjekter
 
-`."your class name"`
+# Modules 
+Bra når man skal style enkelt komponeter, krever mer setup når man da man må lage en ny mappe for hver komponent man ønsker å style
 
-og for å accesse en child class må man bruke:
+Husk man må lage en ny mappe og kalle css stylesheetet for:
+`YourComponent.module.css`, husk å importere stylesheetet i komponentet.
+man må også bruke curlybrackets `{}` når man legger til style på komponentet
 
-`."parent class" ."child class"`
+Eksempel
+`import styles from './YourComponent.module.css'`
 
-se [Index CSS file](./my-react-app/src/index.css) for eksempel.
+`className = {styles.button}`
+
+# Inline 
+Bra når man kun skal style én komponet, blir mye rot når man får større prosjekter
 
 
 

@@ -2,25 +2,19 @@
 
 Hva lærte jeg:
 
-Styling av komponenter i react ved hjelp av css
+# Props
 
-# External
-Bra når man skal style hele "prosjektet" blir knotete å style enkelt komponenter som kanpper når de ofte får samme `className` i større prosjekter
+Props er som et hashMap i java den blir brukt når man vil få inn key:value par
 
-# Modules 
-Bra når man skal style enkelt komponeter, krever mer setup når man da man må lage en ny mappe for hver komponent man ønsker å style
+se:
+[Link to App.jsx](./my-react-app/src/App.jsx) og [Link to Student.jsx](./my-react-app/src/Student.jsx) 
 
-Husk man må lage en ny mappe og kalle css stylesheetet for:
-`YourComponent.module.css`, husk å importere stylesheetet i komponentet.
-man må også bruke curlybrackets `{}` når man legger til style på komponentet
+for hvordan de brukes.
 
-Eksempel
-`import styles from './YourComponent.module.css'`
+`PropTypes` er ment for å verifisere at verdien som blir lagt inn i komponenten er av riktig type. Dette regner jeg med blir automatisk gjort når jeg skal gå over til typescript ettersom den sjekker typer.
 
-`className = {styles.button}`
+`PropDefaults` er ment til å bli brukt når man glemmer/ikke legger inn verdi til objektet ditt. Da vil den får en default verdi.
 
-# Inline 
-Bra når man kun skal style én komponet, blir mye rot når man får større prosjekter
 
 
 
